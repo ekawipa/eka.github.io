@@ -1,0 +1,5 @@
+title: "Eka W. Prasetya"
+description: "DevSecOps Engineer | AI+ & Python Enabled"
+theme: minima
+plugins:
+  - jekyll-feed
