@@ -90,6 +90,18 @@
     @media (min-width: 800px) {
     .projects { grid-template-columns: 1fr 1fr; }
     }
+    .contrib-graph {
+    overflow-x: auto;   /* allows scroll if needed */
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    background: color-mix(in oklab, var(--card) 96%, transparent);
+    padding: 10px;
+    }
+    .contrib-graph img {
+    max-width: 100%;    /* scales down to fit container */
+    height: auto;       /* keeps aspect ratio */
+    display: block;
+    }
   </style>
 </head>
 <body>
@@ -172,7 +184,9 @@
     
 <section>
   <h2>📈 Contribution Activity</h2>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ekawipa&theme=github-compact" alt="GitHub Activity Graph" />
+  <div class="contrib-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ekawipa&theme=github-compact" alt="GitHub Contribution Activity Graph" />
+  </div>
 </section>
 
 <section>
