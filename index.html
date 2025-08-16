@@ -115,6 +115,33 @@
     margin-bottom: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
+    .repo-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    }
+    .repo {
+    display: block;
+    padding: 16px;
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    text-decoration: none;
+    background: color-mix(in oklab, var(--card) 96%, transparent);
+    color: var(--text);
+    transition: transform .2s, border-color .2s;
+    }
+    .repo:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    }
+    .repo h3 { margin: 0 0 8px; font-size: 1.2rem; }
+    .repo p { margin: 0 0 8px; color: var(--muted); font-size: 0.95rem; }
+    .repo span { font-size: 0.85rem; color: var(--muted); }
+    @media (min-width: 800px) {
+    .repo-list { grid-template-columns: 1fr 1fr; }
+    }
+
   </style>
 </head>
 <body>
